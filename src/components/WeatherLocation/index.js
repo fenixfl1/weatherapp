@@ -4,6 +4,7 @@ import transformsWeather from '../../servises/transformsWeather';
 import Location from './Location';
 import api_weather from '../../servises/weatherApi';
 import CustomSpinner from '../CustomSpinner';
+import CustomSelect from '../CustomSelect'
 
 
 class WeatherLocation extends React.Component {
@@ -64,22 +65,10 @@ class WeatherLocation extends React.Component {
                     </div>
 
                     <div className="card-footer bg-white">
-                        <div className="form-group m-auto col-md-6">
-                            <select 
-                                value={this.state.value} 
-                                onChange={this.handleChange}
-                                className="form-control"
-                            >
-                                <option value="la vega,do">La Vega</option>
-                                <option value="jarabacoa,do">Jarabacoa</option>
-                                <option value="moca,do">Moca</option>
-                                <option value="puerto plata,do">Puerto Plata</option>
-                                <option value="santiago de los caballeros,do">Santiago</option>
-                                <option value="santo domingo,do">Santo Domingo</option>
-                                <option value="Bonao,do">Bonao</option>
-                                <option value="mao,do">Mao</option>
-                            </select>
-                        </div>
+                        <CustomSelect 
+                            value={this.state.value} 
+                            onChange={this.handleChange}
+                        />
                     </div>
                 </div>
             </div>
