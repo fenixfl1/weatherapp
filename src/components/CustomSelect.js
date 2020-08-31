@@ -16,6 +16,7 @@ const CustomSelect = (props) => {
                 <option value="santo domingo,do">Santo Domingo</option>
                 <option value="Bonao,do">Bonao</option>
                 <option value="mao,do">Mao</option>
+                <option value="sntiago rodriguez,do">Santiago Rodriguez</option>
             </select>
         </div>
     )
