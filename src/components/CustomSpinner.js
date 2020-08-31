@@ -1,5 +1,5 @@
-import React from 'react'
-import { Spinner } from 'react-bootstrap'
+import React from 'react';
+import { Spinner } from 'react-bootstrap';
 
 
 const CustomSpinner = () => {
@@ -12,7 +12,7 @@ const CustomSpinner = () => {
         className={'ml-auto'}
       />
     </div>
-  )
+  );
 }
 
-export default CustomSpinner
+export default CustomSpinner;
