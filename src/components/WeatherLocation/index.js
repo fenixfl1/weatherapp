@@ -3,6 +3,7 @@ import WeatherData from './WeatherData/index';
 import transformsWeather from '../../servises/transformsWeather';
 import Location from './Location';
 import api_weather from '../../servises/weatherApi';
+import CustomSpinner from '../CustomSpinner';
 
 
 class WeatherLocation extends React.Component {
@@ -59,7 +60,7 @@ class WeatherLocation extends React.Component {
                 <div className="card col-md-5 m-auto border shadow">
                     <Location city={ city } />
                     <div className="card-body bg-dark-gray">
-                        { data ? <WeatherData data={ data } /> : 'Loading...'}
+                        { data ? <WeatherData data={ data } /> : <CustomSpinner />}
                     </div>
 
                     <div className="card-footer bg-white">
